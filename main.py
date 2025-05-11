@@ -153,8 +153,7 @@ def get_book(isbn13: int):
     }
 
 # Serve static files (like HTML, JS)
-app.mount("/static", StaticFiles(directory="static"), name="static")
-app.mount("/", StaticFiles(directory="static", html=True), name="static")
+app.mount("/", StaticFiles(directory=".", html=True), name="root")
 
 
 # Serve index.html at root "/"
