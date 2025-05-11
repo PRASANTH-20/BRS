@@ -160,6 +160,6 @@ app.mount("/", StaticFiles(directory="static", html=True), name="static")
 # Serve index.html at root "/"
 @app.get("/")
 def serve_index():
-    return FileResponse("static/index.html")
+    return FileResponse("index.html")
 
 webbrowser.open("http://127.0.0.1:8000")
