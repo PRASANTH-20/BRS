@@ -31,7 +31,8 @@ function submitData() {
 
 // Load category list from backend
 function loadCategories() {
-  fetch("http://localhost:8000/categories")
+fetch("https://brs-fastapi.onrender.com/categories")
+ // fetch("http://localhost:8000/categories")
     .then(res => res.json())
     .then(data => {
       const dropdown = document.getElementById("category");
