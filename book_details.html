@@ -65,7 +65,7 @@
 
       try {
         // Fetch book details from API
-        const response = await fetch(`http://localhost:8000/book/${bookId}`);
+        const response = await fetch(`https://brs-8rlq.onrender.com/book/${bookId}`);
         if (!response.ok) throw new Error("Failed to fetch book details");
 
         const book = await response.json();
