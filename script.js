@@ -31,7 +31,7 @@ function submitData() {
 
 // Load category list from backend
 function loadCategories() {
-fetch("https://brs-fastapi.onrender.com/categories")
+fetch("https://brs-8rlq.onrender.com/categories")
  // fetch("http://localhost:8000/categories")
     .then(res => res.json())
     .then(data => {
