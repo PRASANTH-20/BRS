@@ -57,7 +57,7 @@ function loadBookDetailsPage() {
     return;
   }
 
-  fetch(`http://localhost:8000/book/${bookId}`)
+  fetch(`https://brs-8rlq.onrender.com/book/${bookId}`)
     .then(res => {
       if (!res.ok) throw new Error("Book not found");
       return res.json();
